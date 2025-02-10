@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/code/starter_simple.html" }
+    ]
+  }
