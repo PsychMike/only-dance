@@ -4,11 +4,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 import { getStorage } from "firebase/storage"; // ✅ Import Firebase Storage
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyByyd-1k7S3PqnFDcUm5d2G1_1L0du7yGA",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "onlydance-e1a4b.firebaseapp.com",
   projectId: "onlydance-e1a4b",
   storageBucket: "onlydance-e1a4b.appspot.com", // FIXED storageBucket format
