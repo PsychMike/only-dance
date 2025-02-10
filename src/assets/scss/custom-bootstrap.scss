@@ -1,0 +1,12 @@
+// Import Bootstrap functions and variables
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// 🎨 Customize Bootstrap Variables (Override Defaults)
+$primary: #ff5733; // Change primary color
+$secondary: #33ff77; // Change secondary color
+$font-family-base: "Arial", sans-serif; // Change global font
+$border-radius: 10px; // Increase button border-radius
+
+// Import Bootstrap with new styles
+@import "bootstrap/scss/bootstrap";

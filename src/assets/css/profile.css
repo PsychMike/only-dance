@@ -1,0 +1,33 @@
+/* .profile-container {
+    padding: 1.5rem;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  .profile-picture {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  } */
+  
+  .profile-info {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .profile-info h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .profile-info p {
+    color: #666;
+  }
+  
