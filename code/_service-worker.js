@@ -8,33 +8,34 @@ var CACHE_NAME = APP_NAME + '-' + APP_VER;
 // Add all files you want to view offline below.
 // Leave REQUIRED_FILES = [] to disable offline.
 var REQUIRED_FILES = [
-	// HTML Files
-	'index.html',
-	// Styles
-	'styles/style.css',
-	'styles/bootstrap.css',
-	// Scripts
-	'scripts/custom.js',
-	'scripts/bootstrap.min.js',
-	// Plugins
-	'plugins/charts/charts.js',
-	'plugins/charts/charts-call-graphs.js',
-	'plugins/countdown/countdown.js',
-	'plugins/filterizr/filterizr.js',
-	'plugins/filterizr/filterizr.css',
-	'plugins/filterizr/filterizr-call.js',
-	'plugins/galleryViews/gallery-views.js',
-	'plugins/glightbox/glightbox.js',
-	'plugins/glightbox/glightbox.css',
-	'plugins/glightbox/glightbox-call.js',
-	// Fonts
-	'fonts/css/fontawesome-all.min.css',
-	'fonts/webfonts/fa-brands-400.woff2',
-	'fonts/webfonts/fa-regular-400.woff2',
-	'fonts/webfonts/fa-solid-900.woff2',
-	// Images
-	'images/empty.png',
+    // HTML Files
+    'index.html',
+    // Styles
+    'styles/style.css',
+    'styles/bootstrap.css',
+    // Scripts
+    'scripts/custom.js',
+    'scripts/bootstrap.min.js',
+    // Plugins
+    'plugins/charts/charts.js',
+    'plugins/charts/charts-call-graphs.js',
+    'plugins/countdown/countdown.js',
+    'plugins/filterizr/filterizr.js',
+    'plugins/filterizr/filterizr.css',
+    'plugins/filterizr/filterizr-call.js',
+    'plugins/galleryViews/gallery-views.js',
+    'plugins/glightbox/glightbox.js',
+    'plugins/glightbox/glightbox.css',
+    'plugins/glightbox/glightbox-call.js',
+    // Fonts
+    'fonts/css/fontawesome-all.min.css',
+    'fonts/webfonts/fa-brands-400.woff2',
+    'fonts/webfonts/fa-regular-400.woff2',
+    'fonts/webfonts/fa-solid-900.woff2',
+    // Images
+    'images/empty.png',
 ];
+
 
 // Service Worker Diagnostic. Set true to get console logs.
 var APP_DIAG = false;

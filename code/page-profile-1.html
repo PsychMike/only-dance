@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>AppKit Mobile</title>
+<title>Your Profile</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,25 +38,17 @@
     
     <div class="page-title page-title-fixed">
         <h1>Profile</h1>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
     </div>
     <div class="page-title-clear"></div>
         
     <div class="page-content">
              
-        <div class="card card-style bg-6" data-card-height="450">
-            <div class="card-top">
-            
+        <div class="card card-style bg-6" data-card-height="250">
+            <div class="card-top text-center">
+                <img id="profile-picture" src="default-profile.png" class="rounded-circle" style="width: 120px; height: 120px; object-fit: cover;" alt="Profile Picture">
             </div>
-            <div class="card-bottom ms-3 me-3">
-                <h1 class="font-40 line-height-xl color-white">Jane<br>Louder</h1>
-                <p class="color-white opacity-60"><i class="fa fa-map-marker me-2"></i>San Francisco, California</p>
-                <p class="color-white opacity-80 font-15">
-                    Jane loves listening to really loud music, hanging out and party weekends!
-                </p>
+            <div class="card-bottom ms-3 me-3 text-center">
+                <h1 class="font-40 line-height-xl color-white" id="profile-name">Your Name</h1>              
             </div>
             <div class="card-overlay bg-gradient"></div>
         </div>
@@ -65,84 +57,117 @@
             <div class="content mb-0">
                 <div class="row mb-0 text-center">
                     <div class="col-4">
-                        <h1 class="mb-n1">351</h1>
+                        <h1 class="mb-n1" id="followers-count">0</h1>
                         <p class="font-10 mb-0 pb-0">Followers</p>
                     </div>
                     <div class="col-4">
-                        <h1 class="mb-n1">193</h1>
+                        <h1 class="mb-n1" id="following-count">0</h1>
                         <p class="font-10 mb-0 pb-0">Following</p>
                     </div>
                     <div class="col-4">
-                        <h1 class="mb-n1">615</h1>
+                        <h1 class="mb-n1" id="posts-count">0</h1>
                         <p class="font-10 mb-0 pb-0">Posts</p>
-                    </div>
-                </div>
-
-                <div class="divider mb-4 mt-3"></div>
-
-                <div class="row mb-0 pb-4">
-                    <div class="col-6">
-                        <a href="#" class="btn btn-m btn-full rounded-s bg-highlight font-13 font-600">Follow</a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="btn btn-m btn-full rounded-s border-highlight color-highlight font-13 font-600">Message</a>
                     </div>
                 </div>
                 
                 <div class="divider mb-4"></div>
                 
-                <p class="color-highlight font-600 mb-n1 font-12">by Jane Louder</p>
-                <h4>Recent Photos</h4>
-                
-                <div class="row text-center row-cols-3 mb-n1">
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/1t.jpg" title="Vynil and Typerwritter">
-                        <img data-src="images/pictures/1s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/2t.jpg" title="Cookies">
-                        <img data-src="images/pictures/2s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/3t.jpg" title="Cookies and Flowers">
-                        <img data-src="images/pictures/3s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/4t.jpg" title="Pots and Pans">
-                        <img data-src="images/pictures/4s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/5t.jpg" title="Berries are Packed with Fiber">
-                        <img data-src="images/pictures/5s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/6t.jpg" title="A beautiful Retro Camera">
-                        <img data-src="images/pictures/6s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/7t.jpg" title="Pots and Pans">
-                        <img data-src="images/pictures/7s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/8t.jpg" title="Berries are Packed with Fiber">
-                        <img data-src="images/pictures/8s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
-                    <a class="col mb-4" data-gallery="gallery-1" href="images/pictures/9t.jpg" title="A beautiful Retro Camera">
-                        <img data-src="images/pictures/9s.jpg" class="img-fluid rounded-xs preload-img" alt="img">
-                    </a>
+                <p class="color-highlight font-600 mb-n1 font-12">My Videos</p>
+
+                <!-- Video Carousel -->
+                <div class="splide double-slider visible-slider slider-no-dots" id="user-video-carousel">
+                    <div class="splide__track">
+                        <div class="splide__list" id="user-video-slider"></div>
+                    </div>
                 </div>
+
+                <p id="no-videos-text" class="color-highlight font-600 text-center">No videos added yet.</p>
+
             </div>
         </div>
 
-
          <div data-menu-load="menu-footer.html"></div>
     </div>
-    <!-- Page content ends here-->
-    
-    <!-- Main Menu--> 
-    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
-    
-    <!-- Share Menu-->
-    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
-    
-    <!-- Colors Menu-->
-    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
-     
-    
 </div>
 
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
+<script type="module">
+import { auth, db } from "./scripts/firebase.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+
+onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+        window.location.href = "page-login.html";
+    } else {
+        console.log("User is logged in:", user.email);
+
+        const userRef = doc(db, "users", user.uid);
+        const userSnap = await getDoc(userRef);
+
+        if (userSnap.exists()) {
+            const userData = userSnap.data();
+
+            document.getElementById("profile-name").textContent = userData.username || "Your Name";
+            document.getElementById("profile-picture").src = userData.profilePicture || "default-profile.png";
+            document.getElementById("followers-count").textContent = userData.followers || 0;
+            document.getElementById("following-count").textContent = userData.following || 0;
+
+            const videoSlider = document.getElementById("user-video-slider");
+            const noVideosText = document.getElementById("no-videos-text");
+
+            videoSlider.innerHTML = ""; 
+
+            if (userData.videos && Array.isArray(userData.videos) && userData.videos.length > 0) {
+                console.log("Loading user videos:", userData.videos);
+
+                noVideosText.style.display = "none"; 
+                document.getElementById("posts-count").textContent = userData.videos.length;
+
+                userData.videos.forEach(videoURL => {
+                    const videoID = extractYouTubeID(videoURL);
+                    if (videoID) {
+                        const videoSlide = document.createElement("div");
+                        videoSlide.classList.add("splide__slide", "ps-3");
+
+                        videoSlide.innerHTML = `
+                            <div data-card-height="220" class="card shadow-xl rounded-m">
+                                <div class="video-container">
+                                    <img src="https://img.youtube.com/vi/${videoID}/maxresdefault.jpg" 
+                                         alt="Video Thumbnail" class="video-thumbnail">
+                                    <div class="play-button"><i class="fa fa-play"></i></div>
+                                </div>
+                            </div>
+                        `;
+
+                        videoSlider.appendChild(videoSlide);
+                    }
+                });
+
+                setTimeout(() => {
+                    new Splide("#user-video-carousel", {
+                        type: "loop",
+                        perPage: 2,
+                        autoplay: true,
+                        gap: "1rem",
+                        pagination: false,
+                    }).mount();
+                }, 100);
+            } else {
+                noVideosText.style.display = "block";
+                document.getElementById("posts-count").textContent = "0";
+            }
+        }
+    }
+});
+
+function extractYouTubeID(url) {
+    const regExp = /(?:v=|\/)([0-9A-Za-z_-]{11}).*/;
+    const match = url.match(regExp);
+    return match ? match[1] : null;
+}
+</script>
 </body>
+</html>
