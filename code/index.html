@@ -32,7 +32,7 @@
     </div>
 
     <div id="footer-bar" class="footer-bar-6">
-        <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span></span></a>
     </div>
 
     <div class="page-title page-title-fixed">
@@ -82,7 +82,10 @@
                         const sliderId = `video-slider-${index}`;
 
                         const carouselHTML = `
-                            <h2 class="carousel-title">Category ${index + 1}</h2>
+                            <h2 class="carousel-title">
+                                <!-- Category ${index + 1} -->
+                                Newest Videos
+                            </h2>
                             <div class="splide double-slider visible-slider slider-no-dots" id="${carouselId}">
                                 <div class="splide__track">
                                     <div class="splide__list" id="${sliderId}">
@@ -106,9 +109,9 @@
                                             alt="Video Thumbnail" class="video-thumbnail">
                                         <div class="play-button"><i class="fa fa-play"></i></div>
                                     </div>
-                                    <div class="card-bottom text-center">
+                                    <!-- <div class="card-bottom text-center">
                                         <h4 class="color-white font-800 mb-3">${video.description || "Dance Video"}</h4>
-                                    </div>
+                                    </div> -->
                                     <div class="card-overlay bg-gradient"></div>
                                 </div>
                             `;

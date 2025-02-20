@@ -7087,14 +7087,21 @@ input[type=number] {
 }
 
 .splide__slide {
-  box-sizing: border-box;
-  list-style-type: none !important;
-  margin: 0;
-  flex-shrink: 0;
+  width: 300px !important;  /* Adjust width to be more square-like */
+  flex: 0 0 280px; /* Set a fixed width for each video */
+  height: 280px;   /* Ensure a square-like appearance */
+  margin: 0 10px;  /* Add spacing between videos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.splide__slide img {
-  vertical-align: bottom;
+.splide__slide img,
+.splide__slide iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video thumbnails look good */
+  border-radius: 15px; /* Optional: adds rounded corners */
 }
 
 .splide__slider {
@@ -7120,6 +7127,7 @@ input[type=number] {
 .splide__track {
   position: relative;
   z-index: 0;
+  padding: 0 50px;
 }
 
 .splide--draggable > .splide__track > .splide__list > .splide__slide {
@@ -7379,4 +7387,9 @@ input[type=number] {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 50%;
+}
+
+
+.carousel-title{
+  margin-left: 50px;
 }
